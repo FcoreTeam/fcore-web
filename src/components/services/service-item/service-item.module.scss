@@ -1,0 +1,122 @@
+.service__item {
+    background: var(--background-second-color);
+    backdrop-filter: blur(40px);
+    border-radius: 20px;
+    padding: 20px;
+    height: 500px;
+    border: 1px solid #367D6C;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    &:nth-child(2n) {
+        align-self: flex-end;
+    }
+
+    .service__title {
+        color: var(--text-color);
+        font-weight: 300;
+        font-size: 36px;
+    }
+
+    .service__description {
+        margin-top: 20px;
+        line-height: 1.7;
+        color: var(--text-color-second);
+        font-size: 18px;
+    }
+
+    .services__wrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .service__info {
+            margin-top: 20px;
+            display: flex;
+            gap: 40px;
+
+            .service__price {
+                color: var(--text-color);
+
+                >span {
+                    background: #367D6C;
+                    color: #fff;
+                    border-radius: 10px;
+                    padding: 5px;
+                }
+            }
+
+            .service__time {
+                color: var(--text-color);
+                border-bottom: 1px solid #367D6C;
+            }
+        }
+
+        .order__btn {
+            background-color: #367D6C;
+            color: #fff;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 20px;
+            height: 50px;
+            width: 200px;
+            font-size: 20px;
+            font-weight: 300;
+            font-family: "Montserrat";
+            letter-spacing: 1px;
+
+
+        }
+    }
+}
+
+@media(max-width: 744px) {
+    .service__item {
+        height: fit-content;
+
+        .service__title {
+            font-size: 25px;
+        }
+
+        .service__description {
+            font-size: 16px;
+        }
+
+        .services__wrap {
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+
+            .order__btn {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media(max-width: 504px) {
+    .service__item {
+        .service__title {
+            font-size: 21px;
+        }
+
+        .service__description {
+            font-size: 12px;
+        }
+
+        .services__wrap {
+            .service__info {
+                gap: 10px;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+
+                .service__time {
+                    width: fit-content;
+                }
+            }
+        }
+    }
+}

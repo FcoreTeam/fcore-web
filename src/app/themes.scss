@@ -1,0 +1,44 @@
+:root {
+    --light-background: #F7FAF9;
+    --dark-background: #0a0f0f;
+    --light-text: #0a0f0f;
+    --dark-text: #f7f7f7;
+    --dark-blur: radial-gradient(rgba(54, 125, 108, 0.5), transparent);
+    --light-blur: #367D6C;
+    --light-accent: #3498db;
+    --dark-accent: #e74c3c;
+    --dark-blur-reverse: #367D6C;
+    --light-blur-reverse: radial-gradient(rgba(54, 125, 108, 0.5), transparent);
+    --dark-border-color: transparent;
+    --light-border-color: #367D6C;
+    --dark-second-background: #1f1f1f42;
+    --light-second-background: #ececec77;
+    --light-text-color-second: #2a2a2aa7;
+    --dark-text-color-second: #ffffffa7;
+    --light-text-color-third: #fff;
+    --dark-text-color-third: #367D6C;
+}
+
+.light-theme {
+    --background: var(--light-background);
+    --text-color: var(--light-text);
+    --accent-color: var(--light-accent);
+    --blur-color: var(--light-blur);
+    --blur-color-reverse: var(--light-blur-reverse);
+    --border-color: var(--light-border-color);
+    --background-second-color: var(--light-second-background);
+    --text-color-second: var(--light-text-color-second);
+    --text-color-third: var(--light-text-color-third);
+}
+
+.dark-theme {
+    --background: var(--dark-background);
+    --text-color: var(--dark-text);
+    --blur-color: var(--dark-blur);
+    --accent-color: var(--dark-accent);
+    --blur-color-reverse: var(--dark-blur-reverse);
+    --border-color: var(--dark-border-color);
+    --background-second-color: var(--dark-second-background);
+    --text-color-second: var(--dark-text-color-second);
+    --text-color-third: var(--dark-text-color-third);
+}

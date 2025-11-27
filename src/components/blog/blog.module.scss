@@ -1,0 +1,103 @@
+.blog {
+    width: 95%;
+    min-height: calc(100vh - 60px);
+    padding-top: 120px;
+    position: relative;
+    background: url('/intro_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .works__title {
+        color: var(--text-color);
+        font-weight: 300;
+        z-index: 3;
+        margin-top: 30px;
+        font-size: 60px;
+        margin-bottom: 30px;
+
+        >span {
+            background: #367D6C;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 10px;
+        }
+
+        .invert {
+            background: transparent;
+            border-radius: 0px;
+            border-bottom: 4px solid #367D6C;
+        }
+    }
+
+    .works__map {
+        color: var(--text-color);
+        margin-top: 30px;
+
+        >span {
+            color: #367D6C;
+        }
+    }
+
+    .blog__body {
+        width: 100%;
+        min-height: 100%;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        gap: 15px;
+        position: relative;
+        padding-bottom: 40px;
+    }
+}
+
+@media(max-width: 1461px) {
+    .blog {
+        .works__title {
+            font-size: 40px;
+        }
+
+        .blog__body {
+            grid-template-columns: repeat(2, 50%);
+            justify-content: center;
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    .blog {
+        width: 100%;
+        background-position: top;
+        background-size: cover;
+
+        .works__map {
+            margin-left: 10px;
+        }
+
+        .works__title {
+            margin-left: 10px;
+        }
+
+
+        .blog__body {
+            padding-left: 10px;
+            padding-right: 10px;
+            grid-template-columns: repeat(1, 100%);
+        }
+    }
+}
+
+@media(max-width: 467px) {
+    .blog {
+        .works__map {
+            font-size: 14px;
+        }
+
+        .works__title {
+            font-size: 30px;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.popup__wrap {
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    justify-content: flex-end;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: .3s all;
+
+    &.open {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+    .popup {
+        width: 270px;
+        height: 120px;
+        backdrop-filter: blur(40px);
+        border-radius: 20px;
+        border: 1px solid #367D6C;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        >p {
+            color: #367D6C;
+        }
+    }
+
+}

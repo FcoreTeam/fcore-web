@@ -1,0 +1,104 @@
+.header {
+    width: 95%;
+    border-radius: 100px;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #367D6C;
+    top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 10;
+    position: fixed;
+    transition: opacity 0.3s ease-in-out;
+    backdrop-filter: blur(40px);
+    background: rgba(54, 125, 108, 0.08);
+    border: 1px solid rgba(54, 125, 108, 0.3);
+    box-shadow:
+        0 8px 32px 0 rgba(54, 125, 108, 0.1),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.2),
+        inset 0 0 32px 0 rgba(54, 125, 108, 0.05);
+
+    &_hidden {
+        opacity: 0;
+        pointer-events: none; // чтобы элементы не были кликабельными когда скрыты
+    }
+
+    .header__logo {
+        height: 50px;
+        width: 129px;
+    }
+
+    .header__menu {
+        display: flex;
+        gap: 40px;
+    }
+
+    .header__social {
+        display: flex;
+        gap: 10px;
+        width: fit-content;
+        align-items: center;
+
+        .social {
+            height: 40px;
+            cursor: pointer !important;
+            width: 40px;
+            border-radius: 10px;
+        }
+
+        .header__burger {
+            display: none;
+            width: fit-content;
+            height: 40px;
+            gap: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background: #367d6c1f;
+            border-radius: 10px;
+
+            .burger {
+                width: 15px;
+                height: 10px;
+                display: flex;
+                align-items: center;
+                border-top: 1px solid #367D6C;
+                border-bottom: 1px solid #367D6C;
+
+                >span {
+                    height: 1px;
+                    width: 30px;
+                    background: #367D6C;
+                }
+            }
+
+            >p {
+                color: #367D6C;
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+
+
+@media(max-width: 838px) {
+    .header {
+        .header__social {
+            gap: 0;
+
+            .social {
+                display: none;
+            }
+
+            .header__burger {
+                display: flex;
+                align-items: center;
+
+
+            }
+        }
+
+    }
+}

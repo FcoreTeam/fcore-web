@@ -1,0 +1,114 @@
+.blog__item {
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    height: fit-content;
+    overflow: hidden;
+    background: #367d6c0d;
+    border: 1px solid #367d6c;
+    transition: .3s;
+    cursor: pointer;
+    padding-bottom: 20px;
+
+    &:hover {
+        border-width: 5px;
+    }
+
+    .blog__header {
+        width: 100%;
+        position: relative;
+        height: auto;
+
+
+        .blog__image {
+            width: 100%;
+            height: auto;
+            border: 0;
+        }
+
+        .blog__title {
+            position: absolute;
+            backdrop-filter: blur(40px);
+            backdrop-filter: blur(10px);
+            height: 45px;
+            background: #367d6c;
+            border-top-left-radius: 20px;
+            display: flex;
+            color: #fff;
+            align-items: center;
+            font-size: 13px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-top-right-radius: 20px;
+            bottom: 3px;
+            width: 100%;
+        }
+
+    }
+
+    .blog__writer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+
+        .writer__avatar {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+
+        }
+
+        .writer__name {
+            color: #fff;
+            margin-left: 10px;
+        }
+    }
+
+    .blog__description {
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #ffffff9c;
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 300;
+        font-family: "Montserrat";
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 1461px) {
+    .blog__item {
+        aspect-ratio: 1 / 1.1;
+    }
+}
+
+@media(max-width: 1000px) {
+    .blog__item {
+        aspect-ratio: 1 / 0.9;
+    }
+}
+
+@media(max-width: 481px) {
+    .blog__item {
+        aspect-ratio: 1 / 1;
+
+        .blog__writer {
+            margin-top: 10px;
+        }
+
+        .blog__description {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media(max-width: 380px) {
+    .blog__item {
+        .blog__description {
+            font-size: 11px;
+        }
+    }
+}

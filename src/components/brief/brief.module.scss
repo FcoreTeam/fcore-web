@@ -1,0 +1,466 @@
+.brief {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-flow: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 30px;
+
+    &.light {
+        background: url('/background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &.dark {
+        background: url('/dark_bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+
+    >h1 {
+        font-weight: 300;
+        color: #fff;
+        font-family: "Montserrat";
+        margin-top: 30px;
+        font-size: 60px;
+
+        width: 100%;
+        text-align: left;
+
+
+        >span {
+            background: #367D6C;
+            color: #fff;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 10px;
+
+
+        }
+    }
+
+    .brief__body {
+        margin-top: 60px;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        position: relative;
+        height: fit-content;
+
+        .brief__menu {
+            width: 57%;
+            height: fit-content;
+            border-radius: 10px;
+            padding-bottom: 30px;
+            background: #1b1b1bb5;
+            padding-left: 30px;
+            padding-right: 30px;
+            backdrop-filter: blur(40px);
+
+            .brief__title {
+                color: #fff;
+                padding: 30px;
+                width: 100%;
+                font-weight: 300;
+                font-size: 26px;
+                text-align: center;
+            }
+
+            .input__wrap {
+                width: 100%;
+                display: flex;
+
+            }
+
+            .project__subtitle {
+                margin-top: 40px;
+                color: #fff;
+                font-size: 22px;
+            }
+
+            .subtitle {
+                color: #ffffff6b;
+                line-height: 1.4;
+                margin-top: 10px;
+            }
+
+            .project__types {
+                margin-top: 30px;
+                width: 100%;
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+
+                .project__type {
+                    display: flex;
+                    width: fit-content;
+                    background: #367d6c1f;
+                    border-radius: 10px;
+                    padding: 10px;
+                    color: #fff;
+                    font-size: 18px;
+                    color: #367D6C;
+                    border: 1px solid #367D6C;
+                    cursor: pointer;
+                    transition: .3s;
+
+                    &:hover {
+                        color: #35d3ae;
+                    }
+
+                    &.active {
+                        background: #367D6C;
+                        color: #fff;
+                    }
+                }
+            }
+
+            .project__description {
+                width: 100%;
+                height: fit-content;
+
+                .input__title {
+                    color: #fff;
+                    padding: 5px;
+                    border-radius: 4px;
+                    background: #367D6C;
+                    margin-top: 20px;
+                    width: fit-content;
+                }
+
+                .input {
+                    min-height: 180px;
+                    min-width: 100%;
+                    font-size: 20px;
+                    background: #367d6c1f;
+                    border-radius: 10px;
+                    color: #367D6C;
+                    border: 0px;
+                    padding-left: 10px;
+                    margin-top: 15px;
+                    resize: none;
+                    padding-top: 10px;
+
+                    &:focus {
+                        border: 1px solid #367D6C;
+                        outline: 1px solid #367D6C;
+                    }
+                }
+            }
+
+            .load__wrap {
+                display: flex;
+                width: 100%;
+                align-items: flex-end;
+                height: fit-content;
+
+                .file__wrap {
+                    width: 50%;
+                    height: 50px;
+                    border-radius: 20px;
+                    border: 1px solid #367D6C;
+                    margin-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    transition: .3s;
+
+                    &:hover {
+                        background-color: #367D6C;
+                    }
+
+                    >p {
+                        color: #fff;
+                        font-size: 22px;
+                        font-weight: 300;
+                    }
+
+                    .file__input {
+                        opacity: 0;
+                        width: 100%;
+                        cursor: pointer;
+                        height: 100%;
+                        border-radius: 20px;
+                        position: absolute;
+                    }
+                }
+
+                .file__name {
+                    color: #fff;
+                    margin-left: 20px;
+                    font-weight: 300;
+                }
+
+                .file__error {
+                    color: #ff4444;
+                    margin-left: 20px;
+                    font-weight: 300;
+                }
+            }
+
+            .brief__btn {
+                width: 100%;
+                margin-top: 40px;
+                color: #fff;
+                font-size: 22px;
+                border: 1px solid #367D6C;
+                font-family: "Montserrat";
+                height: 50px;
+                transition: .3s;
+                border-radius: 20px;
+
+                &:hover {
+                    background: #367D6C;
+                }
+            }
+        }
+    }
+
+
+
+    .brief__section {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .order__btn {
+        width: 90%;
+        border-radius: 100px;
+        border: 2px solid #367D6C;
+        color: var(--text-color);
+        position: absolute;
+        bottom: 20px;
+        height: 40px;
+        overflow: hidden;
+        font-family: "Montserrat";
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(54, 125, 108, 1);
+            transition: left 0.3s ease;
+            z-index: -1;
+            border-radius: 15px;
+        }
+
+        &:hover {
+            color: #fff;
+
+
+            &::before {
+                left: 0;
+            }
+        }
+    }
+
+    .brief__nav {
+        height: fit-content;
+        padding: 40px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        width: 39%;
+        border-radius: 10px;
+        background: #1b1b1bb5;
+        backdrop-filter: blur(40px);
+        gap: 20px;
+        position: sticky;
+        top: 20px;
+        align-self: flex-start;
+        transition: top 0.3s ease;
+        right: 30;
+
+        &.sticky {
+            top: 20px;
+        }
+
+        &.stickyWithOffset {
+            top: 20px;
+        }
+
+        >p {
+            font-size: 30px;
+            color: #fff;
+            font-weight: 300;
+
+            >span {
+                color: #367D6C;
+            }
+        }
+    }
+}
+
+@media(max-width: 1300px) {
+    .brief {
+        .brief__body {
+            .brief__menu {
+                width: 65%;
+            }
+        }
+
+
+        .brief__nav {
+            width: 35%;
+
+            >p {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1300px) {
+    .brief {
+        .brief__body {
+            display: flex;
+            flex-flow: column;
+
+            .brief__menu {
+                width: 100%;
+            }
+        }
+
+        .brief__nav {
+            width: 100%;
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 762px) {
+
+    .brief {
+        .brief__body {
+            .brief__menu {
+                .project__types {
+                    .project__type {
+                        font-size: 14px;
+                    }
+                }
+
+                .project__subtitle {
+                    font-size: 20px;
+                }
+
+                .subtitle {
+                    font-size: 14px;
+                }
+
+                .project__description {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 570px) {
+    .brief {
+        >h1 {
+            font-size: 42px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .brief__body {
+            margin-top: 20px;
+
+            .brief__menu {
+                .project__types {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 8px;
+
+                    .project__type {
+                        font-size: 12px;
+                        flex: 1 1 auto;
+                        min-width: 100px;
+                        text-align: center;
+                        white-space: nowrap;
+                        padding: 8px 12px;
+                    }
+                }
+
+                .project__description {
+                    .input {
+                        font-size: 14px;
+                    }
+                }
+
+                .load__wrap {
+                    flex-flow: column;
+                    align-items: center;
+                    gap: 10px;
+
+                    .file__wrap {
+                        width: 100%;
+
+                        >p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .brief__btn {
+                    font-size: 16px;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media(max-width: 470px) {
+    .brief {
+        padding: 20px;
+
+        >h1 {
+            font-size: 34px;
+        }
+
+        .brief__body {
+            .brief__menu {
+
+                .project__subtitle {
+                    font-size: 18px;
+                }
+
+                .subtitle {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 380px) {
+    .brief {
+
+        .brief__body {
+            .brief__menu {
+
+                .project__subtitle {
+                    font-size: 16px;
+                }
+
+                .subtitle {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}

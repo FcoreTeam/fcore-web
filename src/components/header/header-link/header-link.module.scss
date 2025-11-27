@@ -1,0 +1,42 @@
+.link {
+    cursor: pointer;
+    list-style: none;
+
+    .link__name {
+        font-size: 21px;
+        color: #868686;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            color: #367D6C;
+        }
+
+        &.active {
+            color: #367D6C;
+        }
+    }
+}
+
+@media(max-width: 1065px) {
+    .link {
+        .link__name {
+            width: 100%;
+            font-size: 18px;
+        }
+    }
+}
+
+@media(max-width: 959px) {
+    .link {
+        .link__name {
+            font-size: 14px;
+        }
+    }
+}
+
+@media(max-width: 838px) {
+    .link {
+        display: none;
+    }
+}

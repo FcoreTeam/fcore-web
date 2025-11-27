@@ -1,0 +1,65 @@
+.brief__contacts {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 30px;
+
+    .input__wrap {
+        display: flex;
+        width: 100%;
+        flex-flow: column;
+        align-items: flex-start;
+
+
+        .input__title {
+            color: #fff;
+            padding: 5px;
+            border-radius: 4px;
+            background: #367D6C;
+            margin-top: 20px;
+        }
+
+        .input {
+            height: 50px;
+            width: 100%;
+            font-size: 24px;
+            background: #367d6c1f;
+            border-radius: 10px;
+            color: #367D6C;
+            padding-left: 10px;
+            margin-top: 10px;
+
+            &:focus {
+                border: 1px solid #367D6C;
+            }
+        }
+    }
+}
+
+@media(max-width: 762px) {
+
+    .brief__contacts {
+        .input__wrap {
+            .input__title {
+                font-size: 12px;
+            }
+
+            .input {
+                font-size: 21px;
+            }
+        }
+    }
+}
+
+@media(max-width: 570px) {
+    .brief__contacts {
+        flex-flow: column;
+        gap: 0;
+
+        .input__wrap {
+            .input {
+                font-size: 15px;
+            }
+        }
+    }
+}

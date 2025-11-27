@@ -1,0 +1,101 @@
+.header__menu {
+    height: 100vh;
+    width: 200px;
+    backdrop-filter: blur(20px);
+    position: fixed;
+    z-index: 999;
+    right: -200px;
+    background: #29292945;
+    transition: .4s;
+    pointer-events: none;
+    top: 0;
+
+
+    &.open {
+        pointer-events: all;
+        right: 0;
+    }
+
+    .menu__top {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 20px;
+        padding-top: 20px;
+
+        .menu__close {
+            height: 40px;
+
+            width: 120px;
+            background: #367d6c1f;
+            border-radius: 10px;
+            padding-left: 10px;
+            display: flex;
+            align-items: center;
+            color: #367D6C;
+            justify-content: space-between;
+            position: relative;
+
+
+            .cross {
+                position: relative;
+                height: 20px;
+                width: 20px;
+
+
+                &::before,
+                &::after {
+                    position: absolute;
+                    background: #367D6C;
+                    height: 100%;
+                    width: 1px;
+                    content: "";
+                    rotate: 45deg;
+                }
+
+                &::after {
+                    rotate: -45deg;
+                }
+
+            }
+        }
+    }
+
+    .menu__body {
+        margin-top: 40px;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-end;
+        padding-right: 20px;
+        gap: 20px;
+
+        .menu__name {
+            font-size: 22px;
+            text-decoration: none;
+            color: #367D6C;
+
+        }
+
+        .menu__social {
+            gap: 10px;
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+
+
+            .social {
+                height: 40px;
+                cursor: pointer !important;
+                width: 40px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
