@@ -1630,6 +1630,51 @@
     }
 }
 
+@media(max-width: 450px) {
+    .main {
+        .main__services {
+            .main__slider {
+                .swiper__container {
+                    height: 190px;
+
+                    .swiper__slide {
+                        .slide__content {
+                            .slide__type {
+                                display: none;
+                            }
+
+                            position: relative;
+                            height: 100%;
+
+                            .image {
+                                object-fit: fill;
+                                z-index: -1;
+
+                                height: 110%;
+                                position: absolute;
+                            }
+
+                            .slide__text {
+                                .slide__info {
+                                    .info {
+                                        .info__img {
+                                            height: 15px;
+                                            width: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+
+
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media(max-width: 431px) {
     .main {
         .stats__wrap {

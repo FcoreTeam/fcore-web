@@ -105,7 +105,7 @@ const Main = () => {
 
       {theme === "light" && <></>}
 
-      <section ref={introRef} className={styles.intro}>
+      <motion.section ref={introRef} className={styles.intro}>
         <div className={styles.intro__blur}></div>
         <div className={styles.intro__text}>
           <motion.h1
@@ -178,7 +178,7 @@ const Main = () => {
             </Link>
           </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       <section className={styles.main__services}>
         <div className={styles.main__header}></div>
@@ -212,7 +212,7 @@ const Main = () => {
                 <div className={styles.slide__content}>
                   <div className={styles.slide__type}>{slide.type}</div>
                   <Image
-                    src={slide.image}
+                    src={windowWidth < 450 ? slide.image_mobile! : slide.image}
                     width={1640}
                     height={1420}
                     alt="image"
@@ -337,9 +337,9 @@ const Main = () => {
               animate={isStatsInView ? { scale: 1 } : {}}
               transition={{ type: "spring", stiffness: 100, delay: 0.1 }}
             >
-              24
+              12
             </motion.p>
-            <span>эксперта в команде</span>
+            <span>экспертов в команде</span>
           </motion.div>
 
           <motion.div className={styles.stats__info} variants={scaleIn}>
@@ -370,7 +370,7 @@ const Main = () => {
               animate={isStatsInView ? { scale: 1 } : {}}
               transition={{ type: "spring", stiffness: 100, delay: 0.4 }}
             >
-              50+
+              40+
             </motion.p>
             <span>клиентов</span>
           </motion.div>

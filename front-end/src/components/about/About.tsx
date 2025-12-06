@@ -124,14 +124,14 @@ const About = () => {
       >
         <motion.div className={styles.member} variants={scaleIn}>
           <Image
-            src="/user.png"
-            height={260}
-            width={260}
+            src="/andrew.png"
+            height={1260}
+            width={1260}
             className={styles.member__image}
             alt=""
           />
           <p className={styles.member__name}>Андрей</p>
-          <p className={styles.member__role}>Я шарю за код</p>
+          <p className={styles.member__role}>Я генеральный директор</p>
         </motion.div>
         <motion.div className={styles.member} variants={scaleIn}>
           <Image
@@ -141,30 +141,30 @@ const About = () => {
             className={styles.member__image}
             alt=""
           />
-          <p className={styles.member__name}>Алэн</p>
-          <p className={styles.member__role}>Я шарю за управление</p>
+          <p className={styles.member__name}>Никита</p>
+          <p className={styles.member__role}>Я операционный директор</p>
         </motion.div>
         <motion.div className={styles.member} variants={scaleIn}>
           <Image
-            src="/user.png"
+            src="/amin.jpg"
             height={260}
             width={260}
             className={styles.member__image}
             alt=""
           />
-          <p className={styles.member__name}>Крис</p>
-          <p className={styles.member__role}>Я шарю за дизайн</p>
+          <p className={styles.member__name}>Амин</p>
+          <p className={styles.member__role}>Я арт-директор</p>
         </motion.div>
         <motion.div className={styles.member} variants={scaleIn}>
           <Image
-            src="/user.png"
-            height={260}
-            width={260}
+            src="/mike.jpg"
+            height={1260}
+            width={1260}
             className={styles.member__image}
             alt=""
           />
           <p className={styles.member__name}>Мишаня</p>
-          <p className={styles.member__role}>Я шарю за маркетинг</p>
+          <p className={styles.member__role}>Я маркетинговый директор</p>
         </motion.div>
       </motion.section>
 

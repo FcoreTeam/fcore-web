@@ -90,9 +90,6 @@ const Contacts = () => {
           <motion.p className={styles.block__info} variants={fadeIn}>
             Основатель: <span>Николаев Андрей Кириллович</span>
           </motion.p>
-          <motion.p className={styles.block__info} variants={fadeIn}>
-            Операционный директор: <span>Ханухов Алэн Эдуардович</span>
-          </motion.p>
           {/* <motion.p className={styles.block__info} variants={fadeIn}>
             ОКВЭД: <span>62.01 (Разработка программного обеспечения)</span>
           </motion.p> */}
@@ -114,9 +111,6 @@ const Contacts = () => {
           </motion.p>
           <motion.p className={styles.block__info} variants={fadeIn}>
             Генеральный директор: <span>8 (977) 597-77-34</span>
-          </motion.p>
-          <motion.p className={styles.block__info} variants={fadeIn}>
-            Операционный директор: <span>8 (985) 070-80-57</span>
           </motion.p>
           <motion.p className={styles.block__info} variants={fadeIn}>
             ВКонтакте: <span>@fcoreteam</span>

@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
+        width: 1280,
+        height: 720,
       },
     ],
     locale: "ru_RU",
@@ -60,6 +60,7 @@ export default function RootLayout({
   return (
     <html lang="ru" dir="ltr">
       <head></head>
+      <meta name="yandex-verification" content="f7dc39a3b9635cab" />
       <body className={clsx(montserrat.className, themeClass)}>
         <Header />
         {children}
