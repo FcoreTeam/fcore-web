@@ -6,8 +6,7 @@ import clsx from "clsx";
 import { Project, Tags } from "@/types/types";
 import styles from "./work.module.scss";
 
-const Work = ({ name, image, id, tags, domain }: Project) => {
-  // const path = `/cases/${id}`;
+const Work = ({ name, image, tags, domain, id }: Project) => {
   const isApp = tags.includes(Tags.MOBILE);
 
   const handleDomainClick = (e: React.MouseEvent) => {
@@ -16,7 +15,7 @@ const Work = ({ name, image, id, tags, domain }: Project) => {
     window.open("https://" + domain);
   };
   return (
-    <Link href="/" className={styles.work}>
+    <Link href={`/cases/${id}`} className={styles.work}>
       <Link
         href={domain}
         onClick={handleDomainClick}

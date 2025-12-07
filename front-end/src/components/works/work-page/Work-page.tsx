@@ -4,12 +4,10 @@ import { Tags } from "@/types/types";
 import { Project } from "@/types/types";
 import { works } from "../work/works";
 import { useState, useEffect } from "react";
-import { Navigation, Pagination } from "swiper/modules";
 
 import styles from "./work-page.module.scss";
 import Image from "next/image";
-import Button from "@/components/@ui/Button/Button";
-import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -42,88 +40,113 @@ const WorkPage = ({ id }: Pick<Project, "id">) => {
       )}
     >
       <section className={styles.work}>
-        <div className={styles.work__info}>
-          <div className={styles.background__elements}>
-            <div className={styles.backgroud__element}>Задизайнено</div>
-          </div>
-          <div className={styles.work__header}>
-            <h1 className={styles.work__name}>{project.name}</h1>
-          </div>
-
-          <p className={styles.work__description}>{project.description}</p>
-          <h2 className={styles.work__subnav}>⭣ Скриншоты</h2>
-
-          <Swiper
-            modules={[Navigation, Pagination]}
-            className={styles.work__slider}
-            spaceBetween={50}
-            slidesPerView={1}
-            navigation={{
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            }}
-            pagination={{
-              clickable: true,
-            }}
-          >
-            {project.screenshots.map((item, index) => (
-              <SwiperSlide key={index} className={styles.slide}>
-                <Image
-                  src={item}
-                  alt=""
-                  width={1920}
-                  height={1080}
-                  className={styles.slider__image}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-
-          <h2 className={styles.work__subnav}>⭣ Где потыкать</h2>
-          <div className={styles.domain__wrap}>
-            {isApp ? (
-              <></>
-            ) : (
-              <>
-                <Image
-                  src="/www.png"
-                  alt=""
-                  height={30}
-                  width={30}
-                  className={clsx(
-                    styles.domain__img,
-                    theme === "dark" && styles.invert
-                  )}
-                />
-                <p
-                  className={clsx(
-                    styles.domain,
-                    theme === "dark" && styles.invert
-                  )}
-                >
-                  {project.domain}
-                </p>
-              </>
-            )}
+        <div className={styles.work__header}>
+          <Image
+            src={project.image}
+            className={styles.work__image}
+            height={720}
+            width={1280}
+            alt="image"
+          />
+          <div className={styles.work__info}>
+            <p className={styles.work__name}>{`Да, это — ${project.name}`}</p>
+            <p className={styles.work__description}>{project.description}</p>
+            <div className={styles.work__types}>
+              {project.stack.map((item) => (
+                <div key={item.name} className={styles.type}>
+                  <Image
+                    src={item.image}
+                    alt=""
+                    width={30}
+                    height={30}
+                    className={styles.type__image}
+                  />
+                  {item.name}
+                </div>
+              ))}
+            </div>
+            <p className={styles.designed}>
+              {"//"} Разработано и задизайнено в Фкор
+            </p>
           </div>
         </div>
-        <div className={styles.work__right}>
-          <div className={styles.work__navigation}>
-            <div className={styles.nav__wrap}>
-              <p>{">"} Видосик</p>
-              <p>{">"} На чём клепали</p>
-            </div>
-
-            <Button text="Хочу такой же!!!" className={styles.work__btn} />
+        <h2>Статистика проекта</h2>
+        <div className={styles.stats}>
+          <div className={styles.stats__wrap}>
+            <p className={styles.stats__number}>{project.stat1}</p>
+            <p className={styles.stats__name}>{project.name1}</p>
           </div>
-          <p className={styles.work__subtitle}>Теги:</p>
-          <div className={styles.work__tags}>
-            {project.tags.map((item, index) => (
-              <div key={index} className={styles.tag}>
-                {item}
-              </div>
-            ))}
+          <div className={styles.stats__wrap}>
+            <p className={styles.stats__number}>{project.stat2}</p>
+            <p className={styles.stats__name}>{project.name2}</p>
           </div>
+          <div className={styles.stats__wrap}>
+            <p className={styles.stats__number}>{project.stat3}</p>
+            <p className={styles.stats__name}>{project.name3}</p>
+          </div>
+          <div className={styles.stats__wrap}>
+            <p className={styles.stats__number}>{project.stat4}</p>
+            <p className={styles.stats__name}>{project.name4}</p>
+          </div>
+        </div>
+        <h2>Цели проекта</h2>
+        <div className={styles.text__wrap}>
+          <p
+            className={styles.text__description}
+            dangerouslySetInnerHTML={{ __html: project.first_desc! }}
+          ></p>
+          <Image
+            className={styles.text__image}
+            src={project.image1!}
+            alt="image"
+            height={720}
+            width={1280}
+          />
+        </div>
+        <h2>Этапы работы</h2>
+        <div
+          className={styles.text__wrap}
+          style={{ flexDirection: "row-reverse" }}
+        >
+          <p
+            className={styles.text__description}
+            style={{ textAlign: "end", paddingLeft: 30, paddingRight: 0 }}
+            dangerouslySetInnerHTML={{ __html: project.second_desc! }}
+          ></p>
+          <Image
+            className={styles.text__image}
+            src={project.image2!}
+            alt="image"
+            height={720}
+            width={1280}
+          />
+        </div>
+        <h2>Дополнительная информация</h2>
+        <div className={styles.work__btn__wrap}>
+          <a
+            href="https://disk.yandex.ru/d/FjFt6P7lmmrJZw"
+            className={styles.work__btn}
+          >
+            Видео работы
+          </a>
+          <a
+            href="https://disk.yandex.ru/d/FjFt6P7lmmrJZw"
+            className={styles.work__btn}
+          >
+            Фото работ
+          </a>
+          <a
+            href={
+              project.domain.startsWith("http")
+                ? project.domain
+                : `https://${project.domain}`
+            }
+            target="_blank"
+            rel="noopener noreferrer"
+            className={clsx(styles.work__btn, styles.second__btn)}
+          >
+            {project.domain}
+          </a>
         </div>
       </section>
     </div>
