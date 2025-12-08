@@ -17,7 +17,7 @@ export const works: Project[] = [
     image: "/kingpay.png",
     description:
       "Интернет эквайринг для приема и обработки платежей. Реализованное решение поддерживает следующие методы оплаты: СБП, Карта, Электронные кошельки, Мобильная коммерция. Используются, современные методы защиты информации",
-    domain: "account.kingpay.space",
+    domain: "kingpay.space",
     stack: [
       { name: Stack.NEXT, image: "/next.png" },
       { name: Stack.SQL, image: "/postgres.png" },

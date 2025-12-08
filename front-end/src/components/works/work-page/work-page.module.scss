@@ -335,3 +335,112 @@
         }
     }
 }
+
+@media(max-width: 799px) {
+    .work__page {
+        .work {
+            .stats {
+                display: grid;
+                justify-items: center;
+                padding: 0;
+                grid-template-columns: repeat(2, 50%) !important;
+                width: 100%;
+
+                .stats__wrap {
+                    min-width: 100%;
+                    max-height: 159px;
+                    border-bottom: 1px solid #367D6C;
+
+                    &:nth-child(3) {
+                        border-bottom: 0;
+                    }
+
+                    &:nth-child(4) {
+                        border-bottom: 0;
+                    }
+
+                    &:nth-child(2) {
+                        border-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 624px) {
+    .work__page {
+        .work {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            >h2 {
+                font-size: 30px;
+            }
+
+            .work__header {
+                .work__info {
+                    margin-left: 0;
+                }
+
+                .work__image {
+                    height: 300px;
+                }
+            }
+
+            .work__btn__wrap {
+                .work__btn {
+                    font-size: 14px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 460px) {
+    .work__page {
+        .work {
+            .work__header {
+                .work__image {
+                    height: 240px;
+                }
+            }
+
+            .text__wrap {
+
+                .text__description {
+                    font-size: 12px;
+                }
+
+                .text__image {
+                    height: 240px;
+                }
+            }
+
+            .stats {
+                .stats__wrap {
+                    .stats__number {
+                        font-size: 45px;
+                    }
+                }
+            }
+
+            .work__types {
+                display: grid !important;
+                grid-template-columns: 50% 50% !important;
+
+                .type {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    width: 100%;
+                }
+            }
+        }
+
+        .work__btn__wrap {
+            display: flex;
+            flex-flow: column;
+        }
+    }
+}

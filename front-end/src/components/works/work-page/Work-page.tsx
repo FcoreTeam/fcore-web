@@ -130,7 +130,7 @@ const WorkPage = ({ id }: Pick<Project, "id">) => {
             Видео работы
           </a>
           <a
-            href="https://disk.yandex.ru/d/FjFt6P7lmmrJZw"
+            href="https://disk.yandex.ru/d/OXEJ5jCcPAnY4g"
             className={styles.work__btn}
           >
             Фото работ

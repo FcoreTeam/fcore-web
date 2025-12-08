@@ -1,0 +1,47 @@
+/* [project]/src/app/themes.scss.css [app-client] (css) */
+:root {
+  --light-background: #f7faf9;
+  --dark-background: #0a0f0f;
+  --light-text: #0a0f0f;
+  --dark-text: #f7f7f7;
+  --dark-blur: radial-gradient(rgba(54, 125, 108, .5), transparent);
+  --light-blur: #367d6c;
+  --light-accent: #3498db;
+  --dark-accent: #e74c3c;
+  --dark-blur-reverse: #367d6c;
+  --light-blur-reverse: radial-gradient(rgba(54, 125, 108, .5), transparent);
+  --dark-border-color: transparent;
+  --light-border-color: #367d6c;
+  --dark-second-background: rgba(31, 31, 31, .26);
+  --light-second-background: rgba(236, 236, 236, .467);
+  --light-text-color-second: rgba(42, 42, 42, .655);
+  --dark-text-color-second: rgba(255, 255, 255, .655);
+  --light-text-color-third: #fff;
+  --dark-text-color-third: #367d6c;
+}
+
+.light-theme {
+  --background: var(--light-background);
+  --text-color: var(--light-text);
+  --accent-color: var(--light-accent);
+  --blur-color: var(--light-blur);
+  --blur-color-reverse: var(--light-blur-reverse);
+  --border-color: var(--light-border-color);
+  --background-second-color: var(--light-second-background);
+  --text-color-second: var(--light-text-color-second);
+  --text-color-third: var(--light-text-color-third);
+}
+
+.dark-theme {
+  --background: var(--dark-background);
+  --text-color: var(--dark-text);
+  --blur-color: var(--dark-blur);
+  --accent-color: var(--dark-accent);
+  --blur-color-reverse: var(--dark-blur-reverse);
+  --border-color: var(--dark-border-color);
+  --background-second-color: var(--dark-second-background);
+  --text-color-second: var(--dark-text-color-second);
+  --text-color-third: var(--dark-text-color-third);
+}
+
+/*# sourceMappingURL=src_app_themes_scss_css_bad6b30c._.single.css.map*/

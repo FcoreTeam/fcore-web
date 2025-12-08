@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///turbopack:///[project]/src/components/@ui/Button/C:/Users/Andrew/Desktop/fcore-web/front-end/src/components/@ui/Button/button.module.scss"],"sourcesContent":[".button {\r\n    background: transparent;\r\n    border: 0;\r\n    cursor: pointer;\r\n    transition: .3s all;\r\n}"],"names":[],"mappings":"AAAA"}}]
+}
