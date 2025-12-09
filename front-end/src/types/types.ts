@@ -61,6 +61,9 @@ export interface Project {
   second_desc?: TrustedHTML;
   image1?: string;
   image2?: string;
+  video_src?: string;
+  image_src?: string;
+  designed?: string;
 }
 
 export enum BriefTypes {

@@ -1,0 +1,16 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/robots.txt/route": "/robots.txt",
+  "/brief/page": "/brief",
+  "/blog/page": "/blog",
+  "/about/page": "/about",
+  "/contacts/page": "/contacts",
+  "/cases/page": "/cases",
+  "/page": "/",
+  "/project/page": "/project",
+  "/services/page": "/services",
+  "/survey/page": "/survey",
+  "/cases/[id]/page": "/cases/[id]"
+}

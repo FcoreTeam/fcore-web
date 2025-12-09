@@ -66,7 +66,7 @@ const WorkPage = ({ id }: Pick<Project, "id">) => {
               ))}
             </div>
             <p className={styles.designed}>
-              {"//"} Разработано и задизайнено в Фкор
+              {"//"} {project.designed}
             </p>
           </div>
         </div>
@@ -123,30 +123,31 @@ const WorkPage = ({ id }: Pick<Project, "id">) => {
         </div>
         <h2>Дополнительная информация</h2>
         <div className={styles.work__btn__wrap}>
-          <a
-            href="https://disk.yandex.ru/d/FjFt6P7lmmrJZw"
-            className={styles.work__btn}
-          >
-            Видео работы
-          </a>
-          <a
-            href="https://disk.yandex.ru/d/OXEJ5jCcPAnY4g"
-            className={styles.work__btn}
-          >
+          {project.video_src && (
+            <a href={project.video_src} className={styles.work__btn}>
+              Видео работы
+            </a>
+          )}
+
+          <a href={project.image_src} className={styles.work__btn}>
             Фото работ
           </a>
-          <a
-            href={
-              project.domain.startsWith("http")
-                ? project.domain
-                : `https://${project.domain}`
-            }
-            target="_blank"
-            rel="noopener noreferrer"
-            className={clsx(styles.work__btn, styles.second__btn)}
-          >
-            {project.domain}
-          </a>
+          {project.domain === "это дизайн" ? (
+            <></>
+          ) : (
+            <a
+              href={
+                project.domain.startsWith("http")
+                  ? project.domain
+                  : `https://${project.domain}`
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+              className={clsx(styles.work__btn, styles.second__btn)}
+            >
+              {project.domain}
+            </a>
+          )}
         </div>
       </section>
     </div>
