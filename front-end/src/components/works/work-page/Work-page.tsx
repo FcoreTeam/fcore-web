@@ -129,9 +129,12 @@ const WorkPage = ({ id }: Pick<Project, "id">) => {
             </a>
           )}
 
-          <a href={project.image_src} className={styles.work__btn}>
-            Фото работ
-          </a>
+          {project.image_src && (
+            <a href={project.image_src} className={styles.work__btn}>
+              Фото работ
+            </a>
+          )}
+
           {project.domain === "это дизайн" ? (
             <></>
           ) : (
@@ -145,7 +148,9 @@ const WorkPage = ({ id }: Pick<Project, "id">) => {
               rel="noopener noreferrer"
               className={clsx(styles.work__btn, styles.second__btn)}
             >
-              {project.domain}
+              {project.domain === "www.rustore.ru/catalog/app/com.fcore.ecobit"
+                ? "Перейти в Rustore"
+                : project.domain}
             </a>
           )}
         </div>
