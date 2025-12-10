@@ -59,8 +59,9 @@ export default function RootLayout({
 
   return (
     <html lang="ru" dir="ltr">
-      <head></head>
-      <meta name="yandex-verification" content="f7dc39a3b9635cab" />
+      <head>
+        <meta name="yandex-verification" content="eaa139c6417e69bf" />
+      </head>
       <body className={clsx(montserrat.className, themeClass)}>
         <Header />
         {children}

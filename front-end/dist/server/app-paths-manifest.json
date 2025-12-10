@@ -1,6 +1,16 @@
 {
-  "/cases/[id]/page": "app/cases/[id]/page.js",
-  "/cases/page": "app/cases/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js"
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/about/page": "app/about/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/brief/page": "app/brief/page.js",
+  "/contacts/page": "app/contacts/page.js",
+  "/cases/page": "app/cases/page.js",
+  "/page": "app/page.js",
+  "/project/page": "app/project/page.js",
+  "/services/page": "app/services/page.js",
+  "/survey/page": "app/survey/page.js",
+  "/cases/[id]/page": "app/cases/[id]/page.js"
 }

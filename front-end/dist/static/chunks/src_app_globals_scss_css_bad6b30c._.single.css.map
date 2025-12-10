@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///turbopack:///[project]/src/app/C:/Users/Andrew/Desktop/fcore-web/front-end/src/app/globals.scss"],"sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nhtml,\nbody {\n  width: 100%;\n  height: auto;\n  background: var(--background);\n  overflow-x: hidden;\n  scroll-behavior: smooth;\n  display: flex;\n  flex-flow: column;\n  align-items: center;\n}\n\n*::-webkit-scrollbar {\n  width: 0px;\n}"],"names":[],"mappings":"AAAA;;;;;;AAMA;;;;;;;;;;;AAYA"}}]
-}

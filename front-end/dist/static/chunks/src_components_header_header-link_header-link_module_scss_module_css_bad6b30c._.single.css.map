@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///turbopack:///[project]/src/components/header/header-link/C:/Users/Andrew/Desktop/fcore-web/front-end/src/components/header/header-link/header-link.module.scss"],"sourcesContent":[".link {\r\n    cursor: pointer;\r\n    list-style: none;\r\n\r\n    .link__name {\r\n        font-size: 21px;\r\n        color: #868686;\r\n        cursor: pointer;\r\n        transition: .3s;\r\n\r\n        &:hover {\r\n            color: #367D6C;\r\n        }\r\n\r\n        &.active {\r\n            color: #367D6C;\r\n        }\r\n    }\r\n}\r\n\r\n@media(max-width: 1065px) {\r\n    .link {\r\n        .link__name {\r\n            width: 100%;\r\n            font-size: 18px;\r\n        }\r\n    }\r\n}\r\n\r\n@media(max-width: 959px) {\r\n    .link {\r\n        .link__name {\r\n            font-size: 14px;\r\n        }\r\n    }\r\n}\r\n\r\n@media(max-width: 838px) {\r\n    .link {\r\n        display: none;\r\n    }\r\n}"],"names":[],"mappings":"AAAA;;;;;AAII;;;;;;;AAMI;;;;AAUR;EAEQ;;;;;;AAOR;EAEQ;;;;;AAMR;EACI"}}]
-}
