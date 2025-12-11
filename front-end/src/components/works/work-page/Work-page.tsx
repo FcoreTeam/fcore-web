@@ -142,6 +142,8 @@ const WorkPage = ({ id }: Pick<Project, "id">) => {
               href={
                 project.domain.startsWith("http")
                   ? project.domain
+                  : project.domain.startsWith("@")
+                  ? "https://t.me/piclooad_bot"
                   : `https://${project.domain}`
               }
               target="_blank"

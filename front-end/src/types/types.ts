@@ -17,6 +17,7 @@ export enum Tags {
   BRAND = "Бренд",
   DES = "Веб-дизайн",
   ECOM = "Интернет-магазин",
+  TMA = "Телеграм миниапп",
 }
 export enum Stack {
   REACT = "React",
