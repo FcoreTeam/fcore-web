@@ -1,16 +1,16 @@
 {
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/robots.txt/route": "app/robots.txt/route.js",
   "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/blog/page": "app/blog/page.js",
-  "/brief/page": "app/brief/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
   "/about/page": "app/about/page.js",
-  "/page": "app/page.js",
-  "/cases/page": "app/cases/page.js",
+  "/blog/page": "app/blog/page.js",
   "/contacts/page": "app/contacts/page.js",
-  "/project/page": "app/project/page.js",
+  "/cases/page": "app/cases/page.js",
+  "/page": "app/page.js",
   "/services/page": "app/services/page.js",
+  "/brief/page": "app/brief/page.js",
+  "/project/page": "app/project/page.js",
   "/survey/page": "app/survey/page.js",
   "/cases/[id]/page": "app/cases/[id]/page.js"
 }
