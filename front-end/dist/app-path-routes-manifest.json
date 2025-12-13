@@ -1,16 +1,16 @@
 {
-  "/sitemap.xml/route": "/sitemap.xml",
-  "/favicon.ico/route": "/favicon.ico",
   "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
   "/robots.txt/route": "/robots.txt",
-  "/about/page": "/about",
+  "/sitemap.xml/route": "/sitemap.xml",
   "/blog/page": "/blog",
-  "/contacts/page": "/contacts",
+  "/about/page": "/about",
+  "/brief/page": "/brief",
   "/cases/page": "/cases",
+  "/contacts/page": "/contacts",
+  "/project/page": "/project",
   "/page": "/",
   "/services/page": "/services",
-  "/brief/page": "/brief",
-  "/project/page": "/project",
   "/survey/page": "/survey",
   "/cases/[id]/page": "/cases/[id]"
 }
